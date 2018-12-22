@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const hbs = require('hbs');
 
+const port = process.env.PORT || 3000;
 let app = express(); 
 
 app.set('view engine','hbs');
@@ -44,4 +45,4 @@ app.get('/about',(req,res)=>{
     });
 });
 
-app.listen(3000);
+app.listen(port);
