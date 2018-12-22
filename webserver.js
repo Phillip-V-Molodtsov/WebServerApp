@@ -45,4 +45,10 @@ app.get('/about',(req,res)=>{
     });
 });
 
+app.get('/portfolio',(req,res)=>{
+    res.render('portfolio.hbs',{
+        h1Title:'Portfolio',
+    });
+})
+
 app.listen(port);
